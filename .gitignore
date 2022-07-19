@@ -4,6 +4,7 @@ node_modules
 CalculatorCLI/bin
 CalculatorCLI/drop
 CalculatorCLI/obj
+testpackage/bin/calculator.msi
 
 
 # local env files

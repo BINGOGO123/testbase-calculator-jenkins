@@ -1,0 +1,52 @@
+{
+  "resourceGroup": "bingoz",
+  "testBaseAccount": "bingoz",
+  "artifact": "target.zip",
+  "package": {
+    "location": "global",
+    "properties": {
+      "applicationName": "testbase-calculator-jenkins",
+      "version": "1.0",
+      "targetOSList": [{
+          "osUpdateType": "Security updates",
+          "targetOSs": [
+            "Windows 11 21H2"
+          ]
+        },
+        {
+          "osUpdateType": "Feature updates",
+          "targetOSs": [
+            "Windows 11 21H2"
+          ]
+        }
+      ],
+      "flightingRing": "Insider Beta Channel",
+      "tests": [{
+        "commands": [{
+            "name": "script1",
+            "action": "Custom",
+            "applyUpdateBefore": false,
+            "contentType": "Path",
+            "content": "scripts/functional/setup-test-env.ps1",
+            "restartAfter": false
+          },
+          {
+            "name": "script2",
+            "action": "Custom",
+            "contentType": "Path",
+            "content": "scripts/functional/install-app.ps1",
+            "restartAfter": false
+          },
+          {
+            "name": "script3",
+            "action": "Custom",
+            "contentType": "Path",
+            "content": "scripts/functional/run-test.ps1",
+            "restartAfter": false
+          }
+        ],
+        "testType": "FunctionalTest"
+      }]
+    }
+  }
+}
