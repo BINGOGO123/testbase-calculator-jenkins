@@ -9,7 +9,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                powershell '.\\build.sh'
+                powershell '.\\build.ps1'
             }
         }
         stage('makeup') {
