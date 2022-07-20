@@ -1,4 +1,7 @@
 # Calculator
+
+> The resource comes from [[microsoft/testbase: Samples and Tools for Test Base for M365. (github.com)](https://github.com/microsoft/testbase)](https://github.com/microsoft/testbase/tree/main/Sample-App-Src/Calculator)
+
 The app is a calculator with two types: with UI and without UI. It is simply a sample/test app to try out the functionality of Test Base.
 
 ## Prerequisites
@@ -40,6 +43,8 @@ CalculatorCLI is a simple command line calculator.
 ```
 
 ## modification
+
+### change package.json
 
 change `vue-cli-service electron:build` to `vue-cli-service electron:build --publish never` in `package.json`
 
@@ -105,3 +110,6 @@ change `vue-cli-service electron:build` to `vue-cli-service electron:build --pub
 
 ```
 
+### add functional test
+
+Add `testbasepackage`. The resource comes from [testbase/Samples/Package/Functional/Calculator-Appium-Java-Sample at main · microsoft/testbase (github.com)](https://github.com/microsoft/testbase/tree/main/Samples/Package/Functional/Calculator-Appium-Java-Sample) and is restructured to the ideal structure.
