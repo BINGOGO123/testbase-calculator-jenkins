@@ -1,6 +1,6 @@
 # Calculator
 
-> The resource comes from [[microsoft/testbase: Samples and Tools for Test Base for M365. (github.com)](https://github.com/microsoft/testbase)](https://github.com/microsoft/testbase/tree/main/Sample-App-Src/Calculator)
+> The resource comes from [microsoft/testbase: Samples and Tools for Test Base for M365. (github.com)](https://github.com/microsoft/testbase)
 
 The app is a calculator with two types: with UI and without UI. It is simply a sample/test app to try out the functionality of Test Base.
 
