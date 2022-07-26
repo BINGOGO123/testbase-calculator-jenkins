@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('clean') {
+        stage('clean1') {
             steps {
                 powershell 'rm testpackage/bin/calculator.msi -ErrorAction SilentlyContinue'
             }
@@ -15,6 +15,11 @@ pipeline {
         stage('makeup') {
             steps {
                 powershell 'mv windows_installer/calculator.msi testpackage/bin/'
+            }
+        }
+        stage('clean2') {
+            steps {
+                powershell 'rm target.zip -ErrorAction SilentlyContinue'
             }
         }
         stage('package') {
