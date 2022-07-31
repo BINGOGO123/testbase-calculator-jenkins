@@ -29,7 +29,7 @@ pipeline {
         }
         stage('onboard') {
             steps {
-                testBase useConfigurationFile: true, configurationFilePath: 'TestBase.json', credentialsId: 'df-client-secret'
+                testBase useConfigurationFile: true, configurationFilePath: 'TestBase.json', credentialsId: 'prod-client-secret'
             }
         }
     }

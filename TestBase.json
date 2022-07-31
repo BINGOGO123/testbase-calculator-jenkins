@@ -1,9 +1,9 @@
 {
-  "tenantId": "f686d426-8d16-42db-81b7-ab578e110ccd",
-  "clientId": "eb82c345-56d8-4ccd-b0c0-525a025e9adc",
-  "subscriptionId": "9fabf001-9c1f-4aab-9451-e431da271956",
+  "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+  "clientId": "2a9fc163-c52d-4c7a-9c6f-933aea3ce33e",
+  "subscriptionId": "476f61a4-952c-422a-b4db-568a828f35df",
   "resourceGroup": "bingoz",
-  "testBaseAccount": "worst_account",
+  "testBaseAccount": "bingoz",
   "artifact": "target.zip",
   "package": {
     "location": "global",
